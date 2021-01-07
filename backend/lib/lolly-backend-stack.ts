@@ -53,6 +53,11 @@ export class LollyBackendStack extends cdk.Stack {
       fieldName: "createLolly"
     });
 
+    lambdaDs.createResolver({
+      typeName: "Mutation",
+      fieldName: "deleteLolly"
+    });
+    
     // Prints out the AppSync GraphQL endpoint to the terminal
     new cdk.CfnOutput(this, "GraphQLAPIURL", {
       value: lolly_API.graphqlUrl
