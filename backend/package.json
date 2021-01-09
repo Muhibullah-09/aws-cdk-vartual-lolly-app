@@ -30,6 +30,7 @@
     "@aws-cdk/aws-s3-deployment": "^1.83.0",
     "@aws-cdk/core": "1.79.0",
     "aws-sdk": "^2.823.0",
+    "https": "^1.0.0",
     "source-map-support": "^0.5.16"
   }
 }
