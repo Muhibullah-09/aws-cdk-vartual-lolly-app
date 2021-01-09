@@ -5,7 +5,7 @@ plugins: [
     options: {
       typeName: `gatsbyappsync`,
       fieldName: `gatsbyappsync`,
-      url: `https://rkullmdfrbc3be2hoxybw6xjne.appsync-api.us-east-2.amazonaws.com/graphql`
+      url: `https://jhgnml6n7ndmfkkzaunzzrdob4.appsync-api.us-east-2.amazonaws.com/graphql`
     }
   }
 ]
