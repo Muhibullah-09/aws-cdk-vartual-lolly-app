@@ -31,6 +31,14 @@ export type CreateLollyMutation = {
   } | null,
 };
 
+export type DeleteLollyMutationVariables = {
+  lollyId: string,
+};
+
+export type DeleteLollyMutation = {
+  deleteLolly: string | null,
+};
+
 export type GetLolliesQuery = {
   getLollies:  Array< {
     __typename: "Lolly",

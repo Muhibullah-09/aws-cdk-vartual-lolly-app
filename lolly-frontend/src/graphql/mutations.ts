@@ -16,3 +16,8 @@ export const createLolly = /* GraphQL */ `
     }
   }
 `;
+export const deleteLolly = /* GraphQL */ `
+  mutation DeleteLolly($lollyId: String!) {
+    deleteLolly(lollyId: $lollyId)
+  }
+`;
