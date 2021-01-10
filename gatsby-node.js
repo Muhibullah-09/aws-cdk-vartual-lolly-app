@@ -18,8 +18,7 @@ exports.createPages = async ({ actions }) => {
     console.log(error)
   }
 
-  const { createPages } = actions
-
+  const { createPage } = actions
   if (result) {
     result.Items.forEach((lolly) => {
       createPage({
