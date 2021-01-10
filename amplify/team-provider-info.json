@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-vartuallolly-dev-34102-authRole",
+      "UnauthRoleArn": "arn:aws:iam::580656575244:role/amplify-vartuallolly-dev-34102-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::580656575244:role/amplify-vartuallolly-dev-34102-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-vartuallolly-dev-34102-deployment",
+      "UnauthRoleName": "amplify-vartuallolly-dev-34102-unauthRole",
+      "StackName": "amplify-vartuallolly-dev-34102",
+      "StackId": "arn:aws:cloudformation:us-east-2:580656575244:stack/amplify-vartuallolly-dev-34102/eed761d0-5394-11eb-a698-064c4a695e5c",
+      "AmplifyAppId": "d9y5384xiqbka"
+    }
+  }
+}
