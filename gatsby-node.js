@@ -22,7 +22,7 @@ exports.createPages = async ({ actions }) => {
   if (result) {
     result.Items.forEach((lolly) => {
       createPage({
-        path: `lollies/${lolly.lollyPath}`,
+        path: `lolly/${lolly.lollyPath}`,
         component: require.resolve(`./src/Template/Template.tsx`),
         context: {
           lolly
