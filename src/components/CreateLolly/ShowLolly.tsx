@@ -9,7 +9,7 @@ type Props = {
   setSubmission: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
-const ShowLolly: FC<Props> = ({
+const LollyInfo: FC<Props> = ({
   recipient,
   message,
   sender,
@@ -19,7 +19,7 @@ const ShowLolly: FC<Props> = ({
   return (
     <div className="info">
       <p className="share">Your lolly is freezing. Share it with this link: </p>
-      <pre>{`https://master.d9y5384xiqbka.amplifyapp.com/lolly${lollyPath}/`}</pre>
+      <pre>{`https://master.d9y5384xiqbka.amplifyapp.com/${lollyPath}`}</pre>
       <div className="details">
         <p id="recipient" className="recipient">
           {recipient}
@@ -41,4 +41,4 @@ const ShowLolly: FC<Props> = ({
   );
 };
 
-export default ShowLolly;
+export default LollyInfo;

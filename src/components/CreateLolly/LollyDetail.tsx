@@ -37,7 +37,7 @@ const LollyDetail: FC<Props> = ({ setSender, setMessage, setRecipient, setSubmis
       setRecipient(values.recipientName);
       setMessage(values.message);
       setSender(values.sendersName);
-      setLink(`/${nanoid(10)}`);
+      setLink(`lollies/${nanoid(10)}`);
       setSubmission(true);
     },
   });
