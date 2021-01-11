@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ColorPicker from "../components/CreateLolly/ColorPicker";
-import Details from "../components/CreateLolly/Details";
-import LollyInfo from "../components/CreateLolly/LollyInfo";
+import LollyDetail from "../components/CreateLolly/LollyDetail";
+import ShowLolly from "../components/CreateLolly/ShowLolly";
 import Lolly from "../components/Lolly";
 import "../styles/main.css";
 import { createLolly } from '../graphql/mutations';
@@ -48,7 +48,7 @@ const createLollies = () => {
             />
 
             {submission === true ? (
-                <LollyInfo
+                <ShowLolly
                     recipient={recipient}
                     message={message}
                     sender={sender}
@@ -66,7 +66,7 @@ const createLollies = () => {
                             setColorBottom={setColorBottom}
                         />
 
-                        <Details
+                        <LollyDetail
                             setRecipient={setRecipient}
                             setMessage={setMessage}
                             setSender={setSender}

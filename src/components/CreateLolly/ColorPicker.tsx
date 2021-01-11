@@ -9,14 +9,7 @@ type colorProps = {
   setColorBottom: React.Dispatch<React.SetStateAction<string>>;
 };
 
-const ColorPicker: FC<colorProps> = ({
-  colorTop,
-  setColorTop,
-  colorMiddle,
-  setColorMiddle,
-  colorBottom,
-  setColorBottom,
-}) => {
+const ColorPicker: FC<colorProps> = ({ colorTop, setColorTop, colorMiddle, setColorMiddle, colorBottom, setColorBottom }) => {
   return (
     <div className="colorPicker">
       <label htmlFor="colorTop" className="pickerLabel">

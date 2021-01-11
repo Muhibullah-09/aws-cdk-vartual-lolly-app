@@ -29,27 +29,18 @@ const validationSchema = Yup.object({
   sendersName: Yup.string().required("Required"),
 });
 
-const Details: FC<Props> = ({
-  setSender,
-  setMessage,
-  setRecipient,
-  setSubmission,
-  setLink,
-}) => {
+const LollyDetail: FC<Props> = ({ setSender, setMessage, setRecipient, setSubmission, setLink }) => {
   const formik = useFormik({
     initialValues,
     validationSchema,
     onSubmit: (values: formInputs) => {
-      console.log("Values : ", values);
       setRecipient(values.recipientName);
       setMessage(values.message);
       setSender(values.sendersName);
-      setLink(`lollies/${nanoid(10)}`);
-
+      setLink(`/${nanoid(10)}`);
       setSubmission(true);
     },
   });
-  console.log("FORM VALUes : ", formik.values);
   return (
     <div className="info">
       <form onSubmit={formik.handleSubmit}>
@@ -90,7 +81,7 @@ const Details: FC<Props> = ({
               type="text"
               id="sendersName"
               name="sendersName"
-              placeholder="from your friend..."
+              placeholder="From your friend..."
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
               value={formik.values.sendersName}
@@ -106,4 +97,4 @@ const Details: FC<Props> = ({
   );
 };
 
-export default Details;
+export default LollyDetail;
