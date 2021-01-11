@@ -19,7 +19,7 @@ const LollyInfo: FC<Props> = ({
   return (
     <div className="info">
       <p className="share">Your lolly is freezing. Share it with this link: </p>
-      <pre>{`https://master.d9y5384xiqbka.amplifyapp.com/lollies/${lollyPath}`}</pre>
+      <pre>{`https://master.d9y5384xiqbka.amplifyapp.com/lolly/${lollyPath}`}</pre>
       <div className="details">
         <p id="recipient" className="recipient">
           {recipient}
