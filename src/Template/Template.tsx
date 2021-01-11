@@ -1,4 +1,3 @@
-import { Link } from "gatsby";
 import React from "react";
 import Lolly from "../components/Lolly";
 import "../styles/main.css";

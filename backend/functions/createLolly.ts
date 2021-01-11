@@ -1,5 +1,4 @@
-import { DynamoDB, Response } from 'aws-sdk';
-import { resolve } from 'dns';
+import { DynamoDB } from 'aws-sdk';
 const docClient = new DynamoDB.DocumentClient();
 import Lolly from './lolly';
 var https = require('https');
