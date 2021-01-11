@@ -11,7 +11,6 @@ const Template = ({ pageContext: { lolly } }) => {
         lollyBottom={lolly.colorBottom}
       />
       <div className="info">
-        <pre>{`${location.origin}/${lolly.lollyPath}`}</pre>
         <div className="details">
           <p id="recipient" className="recipient">
             {lolly.recipient}
