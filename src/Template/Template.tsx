@@ -2,24 +2,24 @@ import React from "react";
 import Lolly from "../components/Lolly";
 import "../styles/main.css";
 
-const Template = ({ pageContext: { data } }) => {
+const Template = ({ pageContext: { lolly } }) => {
   return (
     <div className="createLolly">
       <Lolly
-        lollyTop={data.colorTop}
-        lollyMiddle={data.colorMiddle}
-        lollyBottom={data.colorBottom}
+        lollyTop={lolly.colorTop}
+        lollyMiddle={lolly.colorMiddle}
+        lollyBottom={lolly.colorBottom}
       />
       <div className="info">
         <div className="details">
           <p id="recipient" className="recipient">
-            {data.recipient}
+            {lolly.recipient}
           </p>
           <div id="message" className="message">
-            {data.message}
+            {lolly.message}
           </div>
           <p id="from" className="from">
-            — {data.sender}
+            — {lolly.sender}
           </p>
         </div>
       </div>
