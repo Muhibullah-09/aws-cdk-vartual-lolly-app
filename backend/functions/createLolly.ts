@@ -4,9 +4,9 @@ import Lolly from './lolly';
 var https = require('https');
 
 const options = {
-  hostname: 'webhooks.amplify.us-east-2.amazonaws.com',
-  path: '/prod/webhooks?id=12de7c27-7933-4a6a-9b42-1a0ab066d91b&token=y2MId90A0qIWnftoZNCpgeC2dIZwpgECSF6l4z9Eto',
-  method: 'POST'
+  hostname: '',
+  path: '',
+  method: ''
 };
 
 

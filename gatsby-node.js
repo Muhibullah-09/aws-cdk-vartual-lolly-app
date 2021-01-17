@@ -1,9 +1,9 @@
 var AWS = require('aws-sdk');
 exports.createPages = async ({ actions }) => {
   var docClient = new AWS.DynamoDB.DocumentClient({
-    region: 'us-east-2',
-    accessKeyId: 'AKIAYOMOUGMGEYNM6E7J',
-    secretAccessKey: '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'
+    region: '',
+    accessKeyId: '',
+    secretAccessKey: ''
   });
 
   const params = {
